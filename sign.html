@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="main">
+  <div id="home">
+    <div id="title">
+      <h1>Sign Up</h1>
+      <h4>Please register with your email to continue using our app.</h4>
+    </div>
+
+    <div id="text2">
+      <h4>Sign up via Social Media</h4>
+    </div>
+
+    <div id="sm">
+      <a href="https://m.facebook.com/login/">
+        <div class="logo">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+      </a>
+      <a href="https://x.com/i/flow/login?lang=en">
+        <div class="logo">
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
+      </a>
+    </div>
+
+    <div id="text3">
+      <h4>or sign up with email</h4>
+    </div>
+
+    <!-- Sign-Up Form Starts Here -->
+    <form action="/signup" method="post">
+      <div id="btns">
+        <!-- Email Input Field -->
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+        <!-- Password Input Field -->
+        <label for="password"></label>
+        <div id="password-wrapper" style="position: relative;">
+          <input type="password" id="password" name="password" placeholder="Enter password" required>
+          <!-- Eye Icon for Showing/Hiding Password -->
+          <div id="eyes" style="position: absolute; top: 50%; right: 15px; transform: translateY(-50%); cursor: pointer;">
+            <i id="eye" class="fa-solid fa-eye-slash"></i>
+          </div>
+        </div>
+
+        <!-- Privacy Policy Checkbox -->
+        <div id="cbb">
+          <input type="checkbox" value="check" name="privacy_policy" id="cb" required>
+          <label for="cb">I agree with the <a href="#">privacy policy</a>.</label>
+        </div>
+      </div>
+
+      <!-- Sign Up Button -->
+      <div id="btn">
+        <button type="submit"><h3>Sign up</h3></button>
+      </div>
+    </form>
+    <!-- Sign-Up Form Ends Here -->
+
+    <div id="text4">
+      <h4>Already have an account? <a href="login.html">Log in</a></h4>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+
+</body>
+</html>
