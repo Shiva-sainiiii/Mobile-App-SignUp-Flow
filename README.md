@@ -4,6 +4,9 @@
 
 This design document outlines the UI/UX design for a comprehensive mobile app, encompassing sign-up flow, login, forget password, and home page. The design aims to provide an intuitive and seamless user experience.
 
+link : 
+https://shiva-sainiiii.github.io/Mobile-App-SignUp-Flow/
+
 *Design Requirements 📝*
 
 - Platform: Mobile (iOS and Android)
